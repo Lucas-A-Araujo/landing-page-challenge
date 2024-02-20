@@ -8,8 +8,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 10%; /* Margem à esquerda */
-    width: 80%; /* Ajuste a largura conforme necessário */
+    margin-left: 4%; /* Margem à esquerda */
+    width: 100%;
+    color: white;
+    text-align: left;
   }
   
   .welcome-text {

@@ -14,8 +14,9 @@ function WelcomeSection() {
       <section id="welcome" className="section welcome-section" style={welcomeStyle}>
         <div className="welcome-content">
           <div className="welcome-text">
-            <h1>Bem Vindo à Nossa Plataforma de Cursos!</h1>
-            <p>Aprenda com os melhores profissionais e alcance o seu potencial.</p>
+            <h3>A qualquer hora em qualquer lugar</h3>
+            <h1>Evolua sua carreira em dados com profissionais da area</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim volutpat enim eu mollis. Nam fringilla nulla vel mauris accumsan molestie.</p>
           </div>
         </div>
       </section>
