@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import WelcomeBackground from '../../assets/welcome-background.jpg'; // Importe sua imagem aqui
+import WelcomeBackground from '../../assets/welcome-background.jpg';
 
 function WelcomeSection() {
     const welcomeStyle = {
