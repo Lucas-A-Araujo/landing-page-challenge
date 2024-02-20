@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { NavBar } from './components/Navbar';
+import WelcomeSection from './components/Welcome_section';
 
 
 
@@ -12,14 +13,14 @@ function Section({ id, children }) {
   );
 }
 
-function WelcomeSection() {
+/* function WelcomeSection() {
   return (
     <Section id="welcome">
       <h1>Bem Vindo à Nossa Plataforma de Cursos!</h1>
       <p>Aprenda com os melhores profissionais e alcance o seu potencial.</p>
     </Section>
   );
-}
+} */
 
 function ProfessionalsSection() {
   return (

@@ -1,0 +1,29 @@
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .welcome-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%; /* Margem à esquerda */
+    width: 80%; /* Ajuste a largura conforme necessário */
+  }
+  
+  .welcome-text {
+    max-width: 50%;
+  }
+  
+  .welcome-image-container {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .welcome-image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Centraliza a imagem e corta o excesso */
+  }
