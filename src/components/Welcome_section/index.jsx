@@ -17,6 +17,10 @@ function WelcomeSection() {
             <h3>A qualquer hora em qualquer lugar</h3>
             <h1>Evolua sua carreira em dados com profissionais da area</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim volutpat enim eu mollis. Nam fringilla nulla vel mauris accumsan molestie.</p>
+            <div className="button-container">
+                <a href="#subscription-form" className="button">Compre agora</a>
+                <a href="#our-courses" className="button button-white">Ver cursos</a>
+          </div>
           </div>
         </div>
       </section>

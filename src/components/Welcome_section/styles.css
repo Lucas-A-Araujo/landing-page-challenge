@@ -29,3 +29,31 @@
     max-height: 100%;
     object-fit: contain; /* Centraliza a imagem e corta o excesso */
   }
+
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0D5EF4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button.button-white {
+    background-color: white;
+    color: #0D5EF4;
+  }
+  
+  .button:hover {
+    background-color: #094aa8;
+  }
+  
+  .button.button-white:hover {
+    background-color: #f0f0f0;
+  }
