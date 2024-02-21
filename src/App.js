@@ -7,6 +7,7 @@ import WhyChooseUsSection from './components/WhyUs_section';
 import Validationomponent from './components/validation_section';
 import TestimonialsSection from './components/Testimonials_section';
 import PricesSection from './components/Prices_section';
+import SubscriptionFormSection from './components/form_section';
 
 
 
@@ -36,15 +37,6 @@ function CoursesSection() {
           </div>
         ))}
       </div>
-    </Section>
-  );
-}
-
-function SubscriptionFormSection() {
-  return (
-    <Section id="subscription-form">
-      <h2>Assine Agora</h2>
-      {/* Formulário de assinatura */}
     </Section>
   );
 }
