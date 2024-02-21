@@ -3,6 +3,8 @@ import './App.css';
 import { NavBar } from './components/Navbar';
 import WelcomeSection from './components/Welcome_section';
 import ProfessionalsSection from './components/Profissional_section';
+import WhyChooseUsSection from './components/WhyUs_section';
+import Validationomponent from './components/validation_section';
 
 
 
@@ -11,15 +13,6 @@ function Section({ id, children }) {
     <section id={id} className="section">
       {children}
     </section>
-  );
-}
-
-function WhyChooseUsSection() {
-  return (
-    <Section id="why-choose-us">
-      <h2>Por que nos Escolher?</h2>
-      {/* Razões para escolher a sua plataforma */}
-    </Section>
   );
 }
 
@@ -102,6 +95,7 @@ function App() {
       <WelcomeSection />
       <ProfessionalsSection />
       <WhyChooseUsSection />
+      <Validationomponent/>
       <CoursesSection />
       <TestimonialsSection />
       <PricesSection />

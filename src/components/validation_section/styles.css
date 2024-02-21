@@ -1,0 +1,23 @@
+.square-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+  }
+  
+  .square {
+    background-color: #0D5EF4;
+    padding: 40px 20px 40px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .square h4 {
+    margin-top: 0;
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  
+  .square p {
+    font-size: 16px;
+    font-weight: bold;
+  }
