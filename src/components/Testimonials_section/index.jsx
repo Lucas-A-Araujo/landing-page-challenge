@@ -31,8 +31,8 @@ const TestimonialsSection = () => {
 
     return (
       <div className="testimonials-section">
-        <h2>Testimonials</h2>
-        <h3>What Our Customers Say</h3>
+        <h2>Testemunhos</h2>
+        <h3>O que nossos alunos dizem</h3>
         <div className="testimonials-carousel">
           {[prevIndex, currentSlide, nextIndex].map((index) => (
             <div key={testimonials[index].id} className={`testimonial-card ${index === currentSlide ? 'active' : ''}`}>

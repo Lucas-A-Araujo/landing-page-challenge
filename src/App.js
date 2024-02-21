@@ -6,6 +6,7 @@ import ProfessionalsSection from './components/Profissional_section';
 import WhyChooseUsSection from './components/WhyUs_section';
 import Validationomponent from './components/validation_section';
 import TestimonialsSection from './components/Testimonials_section';
+import PricesSection from './components/Prices_section';
 
 
 
@@ -32,28 +33,6 @@ function CoursesSection() {
           <div key={course.id} className="course">
             <h3>{course.title}</h3>
             {/* Detalhes do curso */}
-          </div>
-        ))}
-      </div>
-    </Section>
-  );
-}
-
-function PricesSection() {
-  const [prices] = useState([
-    { id: 1, plan: 'Básico', price: 'R$ 99,99/mês' },
-    { id: 2, plan: 'Padrão', price: 'R$ 149,99/mês' },
-    { id: 3, plan: 'Premium', price: 'R$ 199,99/mês' }
-  ]);
-
-  return (
-    <Section id="prices">
-      <h2>Preços</h2>
-      <div className="prices-container">
-        {prices.map(price => (
-          <div key={price.id} className="price">
-            <h3>{price.plan}</h3>
-            <p>{price.price}</p>
           </div>
         ))}
       </div>
