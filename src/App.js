@@ -5,6 +5,7 @@ import WelcomeSection from './components/Welcome_section';
 import ProfessionalsSection from './components/Profissional_section';
 import WhyChooseUsSection from './components/WhyUs_section';
 import Validationomponent from './components/validation_section';
+import TestimonialsSection from './components/Testimonials_section';
 
 
 
@@ -34,15 +35,6 @@ function CoursesSection() {
           </div>
         ))}
       </div>
-    </Section>
-  );
-}
-
-function TestimonialsSection() {
-  return (
-    <Section id="testimonials">
-      <h2>Testemunhos de Estudantes</h2>
-      {/* Testemunhos de estudantes */}
     </Section>
   );
 }
