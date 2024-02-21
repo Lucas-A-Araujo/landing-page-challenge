@@ -7,52 +7,48 @@ const TestimonialsSection = () => {
     const testimonials = [
       {
         id: 1,
-        testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et aliquam turpis. Aliquam erat volutpat.",
+        testimonial: "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Sapien in monti palavris qui num significa nadis i pareci latim. In elementis mé pra quem é amistosis quis leo. Leite de capivaris, leite de mula manquis sem cabeça. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Sapien in monti palavris qui num significa nadis i pareci latim.",
         name: "John Doe",
         avatar: "https://via.placeholder.com/150",
       },
       {
         id: 2,
-        testimonial: "Sed dictum libero vel magna laoreet, id tincidunt ligula elementum. Integer nec leo non odio aliquet efficitur.",
+        testimonial: "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Sapien in monti palavris qui num significa nadis i pareci latim. In elementis mé pra quem é amistosis quis leo. Leite de capivaris, leite de mula manquis sem cabeça. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Sapien in monti palavris qui num significa nadis i pareci latim.",
         name: "Jane Smith",
         avatar: "https://via.placeholder.com/150",
       },
       {
         id: 3,
-        testimonial: "Vestibulum in augue eu ante congue lacinia nec eu est. In at nibh et justo mollis accumsan.",
+        testimonial: "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Sapien in monti palavris qui num significa nadis i pareci latim. In elementis mé pra quem é amistosis quis leo. Leite de capivaris, leite de mula manquis sem cabeça. Eu nunca mais boto a boca num copo de cachaça, agora eu só uso canudis! Sapien in monti palavris qui num significa nadis i pareci latim.",
         name: "Alice Johnson",
         avatar: "https://via.placeholder.com/150",
       },
     ];
-  
-    const nextSlide = () => {
-      setCurrentSlide((prevSlide) => (prevSlide === testimonials.length - 1 ? 0 : prevSlide + 1));
-    };
-  
-    const prevSlide = () => {
-      setCurrentSlide((prevSlide) => (prevSlide === 0 ? testimonials.length - 1 : prevSlide - 1));
-    };
-  
+
+    const lastIndex = testimonials.length - 1;
+    const prevIndex = currentSlide === 0 ? lastIndex : currentSlide - 1;
+    const nextIndex = currentSlide === lastIndex ? 0 : currentSlide + 1;
+
     return (
       <div className="testimonials-section">
         <h2>Testimonials</h2>
         <h3>What Our Customers Say</h3>
         <div className="testimonials-carousel">
-          {testimonials.map((testimonial, index) => (
-            <div key={testimonial.id} className={`testimonial-card ${index === currentSlide ? 'active' : ''}`}>
-              <p className="testimonial-text">{testimonial.testimonial}</p>
+          {[prevIndex, currentSlide, nextIndex].map((index) => (
+            <div key={testimonials[index].id} className={`testimonial-card ${index === currentSlide ? 'active' : ''}`}>
+              <p className="testimonial-text">{testimonials[index].testimonial}</p>
               <hr className="testimonial-divider" />
               <div className="testimonial-author">
-                <img src={testimonial.avatar} alt={testimonial.name} className="avatar" />
-                <p className="author-name">{testimonial.name}</p>
+                <img src={testimonials[index].avatar} alt={testimonials[index].name} className="avatar" />
+                <p className="author-name">{testimonials[index].name}</p>
               </div>
             </div>
           ))}
-          <button className="prev-button" onClick={prevSlide}>Previous</button>
-          <button className="next-button" onClick={nextSlide}>Next</button>
+          <button className="prev-button" onClick={() => setCurrentSlide(prevIndex)}>&lt;</button>
+          <button className="next-button" onClick={() => setCurrentSlide(nextIndex)}>&gt;</button>
         </div>
       </div>
     );
-  };
-  
-  export default TestimonialsSection;
+};
+
+export default TestimonialsSection;
