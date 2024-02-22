@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
     const nextIndex = currentSlide === lastIndex ? 0 : currentSlide + 1;
 
     return (
-      <div className="testimonials-section">
+      <div id="testimonials" className="testimonials-section">
         <h2>Testemunhos</h2>
         <h3>O que nossos alunos dizem</h3>
         <div className="testimonials-carousel">

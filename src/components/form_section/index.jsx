@@ -54,7 +54,7 @@ const SubscriptionFormSection = () => {
                         <label htmlFor="coupon">Cupom:</label>
                         <input type="text" id="coupon" name="coupon" value={formData.coupon} onChange={handleChange} />
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button className="button" type="submit">Enviar</button>
                 </form>
             </div>
             <div className="form-image">
